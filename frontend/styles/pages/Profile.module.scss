@@ -1,0 +1,58 @@
+.profile{
+    display: flex;
+    transition: all ease .5s;
+    width: 81%;
+    height: 100%;
+    flex-direction: row !important;
+    .options{
+        display: flex;
+        border-right: 2px dotted black;
+        animation: show 1s ease;
+        min-height:88vh;
+        flex: .2;
+        height: 100%;
+        flex-direction: column !important;
+        .bar{
+            width: 70%;
+            height: 8.5vh;
+            margin: 5% 12.5%;
+            font-weight: 700;
+            font-family: "Raleway";
+            background-color: #fff;
+            border: 2px solid #233D4D;
+            cursor: pointer;
+            border-radius: 4px;
+            color: #233D4D;
+            transition: all ease .3s;
+            font-size: 1.2rem;
+            &:hover{
+                color: #ffffff;
+                background-color: #233D4D;
+                transform: scale(1.15) translateX(10px);
+            }
+            &:nth-child(1){
+                margin-top: 12%;
+            }
+        }
+        .active{
+            background-color: #2F3061;
+            border-color: #2F3061;
+            transform: scale(1.1) translateX(15px);
+            color: #fff;
+        }
+        @keyframes show {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    }
+    .pages{
+        flex: .8;
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+
+.side{
+    width: 100%;
+}

@@ -1,0 +1,119 @@
+.checkout{
+    display: flex;
+    flex-direction: column !important; 
+    width: 81%;
+    transition: all ease .3s;
+    h1{
+        font-size: 2.4rem;
+        text-align: center;
+        font-family: "Lato",sans-serif;
+        margin: 1.5%;
+    }
+    h3{
+        font-size: 1.7rem;
+        margin: 0px;
+        font-family: "Poppins",sans-serif;
+        text-align: center;
+    }
+    div{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around;
+        span{
+            display: flex;
+            margin: 0% 2%;
+            padding: 1.5%;
+            flex-direction: column !important;
+            border: 2px solid #293241;
+            background-color: #293241;
+            text-align: center;
+            color: #fff;
+            border-radius: 20px;
+            flex: .7;
+
+            h2{
+                font-size: 2.1rem;
+                margin: 15px;
+                font-family: "Inter",sans-serif;
+            }
+            h3{
+                font-size: 1.7rem;
+                margin: 12.5px;
+                font-family: "Quicksand",sans-serif;
+            }
+            h4{
+                font-size: 1.4rem;
+                margin: 10px;
+                font-family: "Rubik",sans-serif;
+            }
+            h5{
+                font-size: 1.3rem;
+                margin: 7.5px;
+                font-family: "Montserrat",sans-serif;
+            }
+            p{
+                font-size: 1.1rem;
+                margin: 5px;
+                font-family: "Poppins",serif;
+            }
+        }
+        form{
+            border: 2px solid #6411ad;
+            background-color: #6411ad;
+            margin: 0 2%;
+            border-radius: 10px;
+            color: #f1f1f1;
+            flex: .3;
+            text-align: center;
+            h2{
+                margin: 10% 2%;
+                font-family: "IBM Plex Sans",sans-serif;
+                font-size: 2.1rem;
+            }
+            .coupon{
+                font-size: 1.4rem;
+                background-color: #f03203;
+                text-align: center !important; 
+                width: 100%;
+                border-radius: 3px;
+                padding: 2%;
+            }
+            input{
+                width: 80%;
+                height: 7vh;
+                font-size: 2.6vh;
+                border: 1px solid #3d405b;
+                outline: none;
+                border-radius:2px;
+                font-family: "Rubik",sans-serif;
+            }
+            button{
+                width: 50%;
+                border: 2px solid #003049;
+                background-color: #003049;
+                margin: 10% 0;
+                border-radius: 3px;
+                height: 8vh;
+                color: #fff;
+                cursor: pointer;
+                font-size: 2.8vh;
+                font-weight:900;
+                font-family: "Raleway",serif;
+            }
+        }
+    }
+    button{
+        width: 30%;
+        margin: 2% 0 0 37.5%;
+        height: 7vh;
+        background-color:#003459;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 2.6vh;
+        cursor: pointer;
+    }
+}
+.side{
+    width: 100%;
+}

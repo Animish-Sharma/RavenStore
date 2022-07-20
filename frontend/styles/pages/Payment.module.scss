@@ -1,0 +1,48 @@
+.payment{
+    display: flex;
+    flex-direction: column !important;
+    height: 100%;
+    width: 81%;
+    transition: all ease .5s;
+    h1{
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: "Lato",serif;
+        margin: 2% 0;
+    }
+    div{
+        display: flex;
+        flex-direction: row !important;
+        width: 100%;
+        justify-content: space-around;
+        span{
+            height: 100%;
+            img{
+                width: 80%;
+            }
+
+            &:nth-of-type(1){
+                width: 40%;
+            }
+            &:nth-of-type(2){
+                width: 40%;
+            }
+        }
+    }
+
+    button{
+        width: 35%;
+        margin: 4% 0;
+        height: 7vh;
+        font-size: 2.7vh;
+        background-color: #073b4c;
+        color: #fff;
+        border: 1px solid #073b4c;
+        border-radius: 4px;
+        cursor:pointer;
+    }
+}
+
+.side {
+    width: 100%;
+}

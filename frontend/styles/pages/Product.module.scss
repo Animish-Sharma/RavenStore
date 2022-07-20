@@ -1,0 +1,100 @@
+.product{
+    display: flex;
+    flex-direction: column !important;
+    width: 81%;
+    transition: all ease .3s;
+    h1{
+        font-size: 2.3rem;
+        font-family: "Lato",sans-serif;
+        text-align: center;
+        margin: 10px 12px;
+    }
+    p{
+        margin: 2px;
+        font-size: .95rem;
+    }
+    div{
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column !important;
+            span{
+                display: flex;
+                margin: 0;
+                flex-direction: row !important;
+                align-items: center;
+                justify-content: space-evenly;
+                .off{
+                    background-color: #f5487f;
+                    border-radius:5px;
+                    width: 20%;
+                    height: 3.5vh;
+                    text-align: center;
+                    color: #fff;
+                }
+                p,strike{
+                    margin: 5px;
+                    font-size: 1.1rem;
+                    font-family: "Barlow",sans-serif;
+                    font-weight: 700;
+                }
+            }
+            .buttons{
+                margin-top: 5%;
+                display: flex;
+                flex-direction: row !important;
+                justify-content: space-evenly;
+                button{
+                    background-color: #fff;
+                    width: 30%;
+                    color: #00509d;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 1.3rem;
+                    height: 9vh;
+                    border: 2px solid #00509d;
+                    font-family: "Rubik";
+                    transition: all ease .4s;
+                    &:hover{
+                        color: #fff;
+                        box-shadow: 0px 0px 12px #00509d;
+                        background-color: #00509d;
+                    }
+                    &:nth-child(2){
+                        color: #5a189a;
+                        border-color: #5a189a;
+                        &:hover{
+                            color: #fff;
+                            background-color: #5a189a;
+                            box-shadow: 0px 0px 10px #5a189a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.side{
+    width: 100%;
+}
+
+.heart{
+    color: #dee0e6;
+    position: absolute;
+    left: 95%;
+    cursor: pointer;
+    border: 2px solid #dee0e6;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: all ease .3s;
+    &:hover{
+        color: #ff4d4d;
+        border-color: #ff4d4d;
+    }
+}

@@ -1,0 +1,108 @@
+.card{
+    display: flex;
+    width: 100%;
+    transition: all ease .3s;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    .item{
+        transition: all ease .3s;
+        border: 2px solid #e3e3e3;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 15px;
+        width: 100%;
+        box-shadow: 5px 5px 5px #e3e3e3;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        flex-direction: column !important;
+        h2{
+            font-family: "Inter",serif;
+            margin: 7px;
+        }
+        div{
+            display: flex;
+            flex-direction:row !important;
+            width: 100%;
+            justify-content: left;
+            margin: 0;
+            .heart{
+                color: #dee0e6;
+                margin:0;
+                border: 2px solid #dee0e6;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                padding: 5px;
+                transition: all ease .3s;
+                &:hover{
+                    color: #ff4d4d;
+                    border-color: #ff4d4d;
+                }
+            }
+        }
+        span{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: space-evenly !important;
+            .off{
+                background-color: #f5487f;
+                border-radius:5px;
+                width: 30%;
+                height: 3vh;
+                text-align: center;
+                color: #fff;
+            }
+            p,strike{
+                margin: 5px;
+                font-size: 1.1rem;
+                font-family: "Rubik",sans-serif;
+            }
+        }
+        img{
+            width: 20vw;
+            object-fit: contain;
+            height: 35vh;
+        }
+        button{
+            margin: 5px;
+            cursor: pointer;
+            width: 80%;
+            background:#4d4dff;
+            border: 1px solid #4d4dff;
+            border-radius: 4px;
+            font-size: 2.4vh;
+            height: 4.56vh;
+            color: #fff;
+        }
+        &:hover{
+            box-shadow: 10px 15px 5px #e3e3e3;
+            transform: scale(1.01);
+            p{
+                font-size: 1.1rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+.one{
+    width: 45%;
+}
+.two{
+    width: 45%;
+}
+.three{
+    width: 31%;
+}
+
+.isSide{
+    transition: all ease .3s;
+    .three{
+        width: 31.5%;
+    }
+}

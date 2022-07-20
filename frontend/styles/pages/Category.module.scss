@@ -1,0 +1,25 @@
+.category{
+    display: flex;
+    flex-direction: column !important;
+    transition: all ease .3s;
+    width: 81%;
+    h1{
+        text-align: center;
+        font-family: "Lato",serif;
+        margin: 15px;
+    }
+    .noItem{
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        h2{
+            font-size: 2rem;
+            text-align: center;
+            font-family: "Montserrat";
+        }
+    }
+}
+.side{
+    width: 100%;
+}

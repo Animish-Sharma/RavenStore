@@ -1,0 +1,92 @@
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    height: 12vh;
+    background-color: #1a1b4b;
+    justify-content: space-between;
+    div{
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        .side{
+            margin: 0 2vh;
+            font-size: 2rem;
+            cursor: pointer;
+            animation: show 5s ease;
+            transition: all ease .5s;
+        }
+        h1{
+            font-family: "Alegreya Sans SC",sans-serif;
+            font-weight: 400;
+            font-size: 3.8rem;
+            transition: all ease 0.3s;
+            letter-spacing: .21px;
+            cursor: pointer;
+            margin: auto 1vh;
+            &:hover{
+                transform: scale(1.2) translateX(10%);
+            }
+        }
+        span{
+            display: flex;
+            flex-direction: row !important;
+            align-items: center;
+            input{
+                height: 5vh;
+                margin: 10px;
+                width: 27.5vw;
+                border-radius: 5px;
+                font-size: 1.1rem;
+                outline: none;
+            }
+
+            h5{
+                display: flex;
+                flex-direction: row;                
+                transition: all ease .3s;
+                cursor: pointer;
+                font-size: 1.4rem;
+                margin-right: 5%;
+                &:hover{
+                    font-size: 1.75rem;
+                    transform: rotate(360deg);
+                }
+            }
+            a{
+                transition: all ease .3s;
+                font-size: 1.4rem;
+                margin-right: 1vw;
+                font-weight: 300;
+                font-family: "Roboto";
+                &:hover{
+                    font-size: 1.75rem;
+                }
+            }
+        }
+        }
+    }
+.hide{
+    opacity: 0;
+        animation: hide .5s ease;
+}
+.show{
+    animation: show .5s ease;
+}
+@keyframes hide {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes show {
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}

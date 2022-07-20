@@ -1,0 +1,45 @@
+.user{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    animation: op 1s ease;
+    h1{
+        margin: 10px;
+        font-family: "Poppins",serif;
+        font-size: 2.2rem;
+    }
+    img{
+        width: 35%;
+    }
+    h3{
+        margin: 12.5px;
+        font-size: 1.6rem;
+        font-family: "Quicksand",sans-serif;
+    }
+    h5{
+        margin: 0.5px;
+        font-size: 1.3rem;
+    }
+    p{
+        margin: 10px;
+        font-size: 1.1rem;
+        font-family: "Montserrat",sans-serif;
+        font-weight: bold;
+    }
+    span{
+        display: flex;
+        flex-direction: row !important;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 3%;
+        a{
+            font-size: 1.1rem;
+            text-decoration: underline;
+            color: #ff1a40;
+        }
+    }
+    @keyframes op {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+}

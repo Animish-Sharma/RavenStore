@@ -1,0 +1,88 @@
+.login{
+    display: flex;
+    flex-direction: column !important;
+    transition: all ease .3s;
+    width: 81%;
+    align-items:center;
+    h1{
+        font-size: 2.2rem;
+        font-family: "Poppins",sans-serif;
+        margin: 2% 0;
+    }
+    div{
+        display: flex;
+        width: 100%;
+        flex-direction: row !important;
+        div{
+            display: flex;
+            flex-direction: column !important;
+            padding: 1%;
+            img{
+                width: 85%;
+                height: 100%;
+            }
+        }
+        .formContainer{
+            display: flex;
+            width: 100%;
+            margin-right: 2%;
+            padding: .5%;
+            border: 2px solid #dee0e6;
+            border-radius: 2%;
+            flex-direction: column !important;
+            h3{
+                font-size: 1.6rem;
+                font-family: "Quicksand",Aerial,sans-serif;
+                margin: 5px;
+                text-align: center;
+            }
+            form{
+                margin: 2% 1.5%;
+                height: 100%;
+                label{
+                    font-size: 1.1rem;
+                    font-family: "Barlow",sans-serif;
+                    font-weight:900;
+                    margin: 2% 0;
+                }
+                input{
+                    width: 80%;
+                    font-size: 3vh;
+                    caret-color: red;
+                    border: 2px solid #011;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    font-family: "Rubik",sans-serif;
+                    height: 6vh;
+                    transition: all ease .3s;
+                    outline: none;
+                    &:hover{
+                        width: 90%;
+                    }
+                }
+
+                button{
+                    width: 25%;
+                    background-color: #072448;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    color: white;
+                    height: 7.5vh;
+                    border: 1px solid #fff;
+                    margin: 3% 1%;
+                    font-size: 1.1rem;
+                }
+            }
+            p{
+                margin: 5px 2%;
+                a{
+                    color: #64379f;
+                }
+            }
+        }
+    }
+}
+
+.side{
+    width: 100%;
+}

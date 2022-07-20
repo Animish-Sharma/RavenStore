@@ -1,0 +1,64 @@
+.account{
+    display: flex;
+    flex-direction: column !important;
+    width: 81%;
+    align-items: center;
+    transition: all ease .5s;
+    h1{
+        font-size: 2.2rem;
+        margin: 1%;
+        font-family:"Lato",sans-serif;
+    }
+    img{
+        width: 50%;
+        transition: all ease .4s;
+        padding: 1%;
+    }
+    h4{
+        font-size: 1.4rem;
+        font-family:"Barlow",serif;
+        margin: 1%;
+    }
+    input{
+        width: 30%;
+        height: 6vh;
+        font-size: 2.6vh;
+        outline: none;
+        border: 2px solid #212529;
+        border-radius: 3px;
+        font-family: "Rubik",sans-serif;
+        font-weight: 800;
+    }
+    span{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 1%;
+        button{
+            width: 20%;
+            border-radius: 3px;
+            font-family: "Rubik";
+            font-weight: 800;
+            cursor: pointer;
+            height: 7vh;
+            font-size: 2.6vh;
+            &:nth-of-type(1){
+                background-color: #c3c3c3;
+                border: 1px solid #c3c3c3;
+            }
+            &:nth-of-type(2){
+                background-color: #e5383b;
+                color: #f1f1f1;
+                border: 1px solid #e5383b;
+            }
+        }
+    }
+}
+
+.side{
+    width: 100%;
+    img{
+        width: 38%;
+    }
+}

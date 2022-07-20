@@ -1,0 +1,45 @@
+.orders{
+    display: flex;
+    flex-direction: column !important;
+    animation: op 1.5s ease;
+    height: 100% !important;
+    width: 100%;
+    h1{
+        font-size: 2.3rem;
+        text-align: center !important;
+        font-family: "Lato", sans-serif;
+    }
+
+    span{
+        width: 100%;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        cursor: pointer;
+        margin: 2% 0;
+        img{
+            width: 9vw;
+        }
+        h3{
+            font-size: 1.4rem;
+            font-family: "Inter", sans-serif;
+        }
+        button{
+            width: 13%;
+            position: absolute;
+            background-color:#212D40;
+            border: 1px solid #212D40;
+            border-radius: 42px;
+            cursor: pointer;
+            color: #fff;
+            height: 6vh;
+            left: 85%;
+            font-size: 2.5vh;
+        }
+    }
+
+    @keyframes op {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+}

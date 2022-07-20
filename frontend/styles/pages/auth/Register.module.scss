@@ -1,0 +1,88 @@
+.register{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 81%;
+    transition: all ease .5s;
+    h1{
+        text-align: center;
+        font-family: "Poppins",sans-serif;
+    }
+    div{
+        display: flex;
+        flex-direction: row !important;
+        width: 100%;
+        span{
+            img{
+                width: 77%;
+            }
+            h3{
+                text-align: center;
+                font-family: "Barlow",sans-serif;
+            }
+            form{
+                label{
+                    font-size: 1.1rem;
+                    font-family: "Barlow",sans-serif;
+                    font-weight:900;
+                    margin: 2% 0;
+                }
+                input{
+                    width: 85%;
+                    font-size: 3vh;
+                    caret-color: red;
+                    margin-bottom: 1.5%;
+                    border: 2px solid #f1ffff;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    font-family: "Rubik",sans-serif;
+                    height:5vh;
+                    transition: all ease .3s;
+                    outline: none;
+                    &:hover{
+                        width: 95%;
+                    }
+                }
+                button{
+                    width: 25%;
+                    color: #343090;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    height: 7.5vh;
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                    margin: 3% 1%;
+                    font-size: 1.1rem;
+                    transition: all ease .3s;
+                    &:hover{
+                        background-color: #343090;
+                        color: #fff;
+                        border: 1px solid #343090;
+                        width: 30%;
+                    }
+                }
+            }
+            p{
+                margin: 5px 2%;
+                a{
+                    color: #000;
+                }
+            }
+            &:nth-child(1){
+                width: 100%;
+                margin: 2% 3%;
+            }
+            &:nth-child(2){
+                border: 2px solid #8a2be2;
+                border-radius: 10px;
+                width: 100%;
+                color: #fff;
+                background-color: #8a2be2;
+                margin:0 1%;
+                padding-left: 1%;
+            }
+        }
+    }
+}
+.side{
+    width: 100%;
+}

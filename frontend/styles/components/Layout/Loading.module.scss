@@ -1,0 +1,27 @@
+.loading{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    transition: all ease .3s;
+    align-items: center;
+    width: 81%;
+    height: 100%;
+
+    .loader{
+        border: 16px solid #e5e5e5; /* Light grey */
+        border-top: 16px solid #272643;
+        border-radius: 50%;
+        margin-top: 15%;
+        width: 120px;
+        height: 120px;
+        animation: spin 1s linear infinite;
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+    }
+}
+.side{
+    width: 100%;
+}

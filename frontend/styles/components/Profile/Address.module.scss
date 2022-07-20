@@ -1,0 +1,167 @@
+.address{
+    display: flex;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100%;
+    animation: show 2s ease;
+    h1{
+        font-size: 2.2rem;
+        font-family: "Lato";
+        margin: 17.5px;
+        text-align: center;
+    }
+    div{
+        .card{
+            display: flex;
+            flex-direction: column !important;
+            width: 90%;
+            align-items: center;
+            border: 3px solid #e3e3ea;
+            border-radius: 10px;
+            margin: 2%;
+            h2{
+                margin: 15px;
+                font-family: "Inter",sans-serif;
+                font-size: 2rem;
+            }
+            h3{
+                margin: 12.5px;
+                font-family: "Rubik",sans-serif;
+                font-weight: 800;
+                font-size: 1.6rem;
+            }
+            h4{
+                font-size: 1.4rem;
+                font-family: "Montserrat",sans-serif;
+                margin: 10px;
+            }
+            h5{
+                font-size: 1.3rem;
+                margin: 7.5px;
+                font-weight: 100;
+            }
+            p{
+                margin:5px;
+                font-size: 1.1rem;
+                font-family: "Ubuntu",sans-serif;
+            }
+            span{
+                margin: 2%;
+                display: flex;
+                width: 100%;
+                flex-direction: row !important;
+                justify-content: space-evenly;
+
+                button{
+                    width: 15%;
+                    height: 6vh;
+                    cursor: pointer;
+                    color: #fff;
+                    border: 1px solid #1a1b4b;
+                    border-radius: 4px;
+                    background-color: #1a1b4b;
+                    font-size: 2.5vh;
+
+                    &:nth-child(2){
+                        color: #fff;
+                        background-color: #ff4d4d;
+                        border-color: #ff4d4d;
+                    }
+                }
+            }
+        }
+
+    }
+    .modal{
+        padding: 2%;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        h2{
+            font-size: 1.7rem;
+            font-family: "Quicksand",serif;
+            margin: 10px;
+            text-align: center;
+        }
+        input,.drop{
+            width: 60%;
+            margin: 1% 0;
+            height: 6vh;
+            font-family: "Rubik",serif;
+            font-weight: 800;
+            font-size: 2.5vh;
+            outline: none;
+            border: 2px solid #004;
+            border-radius: 3px;
+        }
+        .drop{
+            width: 45%;
+            margin: 1% 2%;
+        }
+        button{
+            width: 15%;
+            height: 6vh;
+            cursor: pointer;
+            color: #fff;
+            border: 1px solid #309975;
+            border-radius: 4px;
+            background-color: #309975;
+            font-size: 2.8vh;
+        }
+    }
+    .showModal{
+        opacity:1;
+        visibility: visible;
+        transition: all ease .5s;
+        
+    }
+    .hideModal{
+        visibility: hidden;
+        opacity:0;
+        transition: all ease .5s;
+        display: flex;
+        flex-direction: column !important;
+        height:0;
+    }
+
+    .deliveryType{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+
+        h2{
+            font-size: 1.7rem;
+            margin:12.5px;
+            font-family: "Poppins",sans-serif;
+        }
+        h3{
+            font-size: 1.5rem;
+            margin: 10px;
+            font-family: "Barlow",sans-serif;
+        }
+        select{
+            width: 30%;
+            height: 6vh;
+            font-size: 2.5vh;
+            outline: none;
+            margin: 1%;
+        }
+
+        button{
+            width: 20%;
+            height: 6vh;
+            font-size: 2.6vh;
+            background-color: #27104e;
+            color: #fff;
+            border: 1px solid #27104e;
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 2%;
+        }
+    }
+
+    @keyframes show{
+        0%{opacity: 0;}
+        100%{opacity:1;}
+    }
+}

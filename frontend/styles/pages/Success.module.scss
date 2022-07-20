@@ -1,0 +1,59 @@
+.success{
+    width: 81%;
+    transition: all ease .5s;
+    display: flex;
+    flex-direction: column !important;
+    h1{
+        font-size: 2.3rem;
+        text-align:center;
+        font-family:"Inter",sans-serif;
+        margin: 2% 0;
+    }
+    .tick{
+        color:#8ac926;
+        font-size: 22vh;
+    }
+    a{
+        color: #4a14df;
+        text-decoration: underline;
+    }
+    h4{
+        font-size: 1.3rem;
+        font-family: "Quicksand",sans-serif;
+        font-weight: 800;
+        margin: 1.34%;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: "Rubik";
+        font-weight: 800;
+        margin: 10px;
+    }
+    span{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        margin: 1%;
+        button{
+            width: 15%;
+            height: 7vh;
+            font-size: 2.7vh;
+            background-color: #053C5E;
+            border: 1px solid #053C5E;
+            border-radius: 3px;
+            cursor: pointer;
+            color: #fff;
+
+            &:nth-of-type(1){
+                background-color: #DB222A;
+                border-color: #DB222A;
+            }
+        }
+    }
+}
+
+.side {
+    width: 100%;
+}

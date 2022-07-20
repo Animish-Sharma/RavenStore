@@ -1,0 +1,72 @@
+.progress{
+    width: 100%;
+    margin: 0;
+    .container{
+        position: relative;
+        width: 100%;
+        ul{
+            list-style-type: none;
+            width: 100%;
+            counter-reset: step;
+            li{
+                float: left;
+                width: 20%;
+                position: relative;
+                text-align: center;
+                color: #a0a0a0;
+                &::before{
+                    content:counter(step);
+                    counter-increment: step;
+                    width: 15%;
+                    height: 11%;
+                    font-family: "Rubik",serif;
+                    font-weight: bolder;
+                    border: 2px solid #bebebe;
+                    display: block;
+                    margin: 0 auto 1vw auto;
+                    border-radius: 50%;
+                    line-height: 27px;
+                    background: white;
+                    color: #bebebe;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width:100%;
+                    height: 3px;
+                    background: #979797;
+                    top: 15px;
+                    left: -50%;
+                    z-index: -1;
+
+                }
+                &:first-child{
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+            .active{
+                color: #000;
+                &::after {
+                    background: #3aac5d;
+                }
+                &::before{
+                    border-color: #3aac5d;
+                    background: #3aac5d;
+                    color: white
+                }
+            }
+        }
+    }
+}
+
+.side{
+    li{
+        &::before{
+            width: 13% !important;
+        }
+    }
+}
